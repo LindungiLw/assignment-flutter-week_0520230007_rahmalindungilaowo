@@ -49,3 +49,29 @@ A new Flutter project.
 
 3. **How this screen could evolve in a real KRS system?**
    In a real system, the Name and Student ID would not be hardcoded. Instead, they would be fetched from a Student Database via an API. The screen could also include dynamic academic data like GPA (IPK) and semester status.
+
+
+Berikut versi singkat untuk **README.md** 🌿
+
+---
+
+# KRS Flutter — Week 4
+
+## Reflection
+
+### 1. What confused me this week
+
+Saya sempat bingung kenapa UI tidak berubah saat nilai variabel diganti. Ternyata perubahan harus dibungkus dengan `setState()` agar Flutter me-rebuild tampilan.
+
+### 2. How state changed UI behavior
+
+State membuat UI menjadi dinamis. Saat `selectedCredits` berubah di dalam `setState()`, teks otomatis ikut berubah tanpa reload manual.
+
+### 3. Errors I faced and solutions
+
+Susah untuk password dan UI dan juga untuk memanaged uinya akhirnya aku pakai safe area
+
+### 4. Differences between Stateful and Stateless
+
+`StatelessWidget` digunakan untuk tampilan yang tidak berubah.
+`StatefulWidget` digunakan jika data bisa berubah dan membutuhkan `setState()` untuk update UI.
